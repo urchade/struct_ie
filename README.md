@@ -94,7 +94,7 @@ demonstrations = [
 ]
 
 # Extract entities from the text using few-shot examples
-entities = extractor.extract_entities(text, demonstrations=demonstrations)
+entities = extractor.extract_entities(text, few_shot_examples=demonstrations)
 print(entities)
 ```
 
