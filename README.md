@@ -97,12 +97,12 @@ text = (
 )
 
 # Few-shot examples for improved entity extraction
-few_shot_examples = [
+demonstrations = [
     {"input": "Lionel Messi won the Ballon d'Or 7 times.", "output": [("Messi", "Name"), ("Ballon d'Or", "Award")]}
 ]
 
 # Extract entities from the text using few-shot examples
-entities = extractor.extract_entities(text, few_shot_examples=few_shot_examples)
+entities = extractor.extract_entities(text, demonstrations=demonstrations)
 print(entities)
 ```
 
