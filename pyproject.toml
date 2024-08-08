@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["struct_ie", "struct_ie.*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "struct_ie.__version__"}
+
+[project]
+name = "struct_ie"
+description = "A Python library for structured information extraction with LLMs."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+keywords = [
+    "named-entity-recognition",
+    "ner",
+    "data-science",
+    "natural-language-processing",
+    "artificial-intelligence",
+    "nlp",
+    "machine-learning",
+    "transformers"
+]
+authors = [
+    {name = "Urchade Zaratiana", email= "urchade.zaratiana@gmail.com"}
+]
+
+maintainers = [
+    {name = "Urchade Zaratiana", email= "urchade.zaratiana@gmail.com"}
+]
+
+dependencies = [
+    "pydantic",
+    "outlines",
+]
+
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/urchade/struct_ie"
+Repository = "https://github.com/urchade/struct_ie"
