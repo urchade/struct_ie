@@ -1,4 +1,4 @@
-# Struct_IE: Structured information extraction with Large Language Models
+# `Struct-IE`: Structured Information Extraction with Large Language Models
 
 `struc-ie` is a Python library for named entity extraction using a transformer-based model.
 
