@@ -32,10 +32,8 @@ entity_types_with_descriptions = {
 extractor = EntityExtractor("Qwen/Qwen2-0.5B-Instruct", entity_types_with_descriptions, device="cpu")
 
 # Example text for entity extraction
-text = (
-    "Cristiano Ronaldo won the Ballon d'Or. He was the top scorer in the UEFA Champions League in 2018. "
-    "Lionel Messi who plays for Barcelona won the Golden Boot in 2019."
-)
+text = "Cristiano Ronaldo won the Ballon d'Or. He was the top scorer in the UEFA Champions League in 2018."
+
 
 # Extract entities from the text
 entities = extractor.extract_entities(text)
@@ -60,10 +58,7 @@ entity_types_with_descriptions = {
 extractor = EntityExtractor("Qwen/Qwen2-0.5B-Instruct", entity_types_with_descriptions, device="cpu")
 
 # Example text for entity extraction
-text = (
-    "Cristiano Ronaldo won the Ballon d'Or. He was the top scorer in the UEFA Champions League in 2018. "
-    "Lionel Messi who plays for Barcelona won the Golden Boot in 2019."
-)
+text = "Cristiano Ronaldo won the Ballon d'Or. He was the top scorer in the UEFA Champions League in 2018."
 
 # Custom prompt for entity extraction
 prompt = "You are an expert on Named Entity Recognition. Extract entities from this text."
@@ -91,10 +86,7 @@ entity_types_with_descriptions = {
 extractor = EntityExtractor("Qwen/Qwen2-0.5B-Instruct", entity_types_with_descriptions, device="cpu")
 
 # Example text for entity extraction
-text = (
-    "Cristiano Ronaldo won the Ballon d'Or. He was the top scorer in the UEFA Champions League in 2018. "
-    "Lionel Messi who plays for Barcelona won the Golden Boot in 2019."
-)
+text = "Cristiano Ronaldo won the Ballon d'Or. He was the top scorer in the UEFA Champions League in 2018."
 
 # Few-shot examples for improved entity extraction
 demonstrations = [
