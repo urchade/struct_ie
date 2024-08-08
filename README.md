@@ -4,7 +4,7 @@
 
 ## Installation
 
-You can install the `struct_ie` library from PyPI:
+You can install the `struc-ie` library from PyPI:
 
 ```bash
 pip install struct_ie
