@@ -34,7 +34,6 @@ extractor = EntityExtractor("Qwen/Qwen2-0.5B-Instruct", entity_types_with_descri
 # Example text for entity extraction
 text = "Cristiano Ronaldo won the Ballon d'Or. He was the top scorer in the UEFA Champions League in 2018."
 
-
 # Extract entities from the text
 entities = extractor.extract_entities(text)
 print(entities)
