@@ -89,7 +89,7 @@ text = "Cristiano Ronaldo won the Ballon d'Or. He was the top scorer in the UEFA
 
 # Few-shot examples for improved entity extraction
 demonstrations = [
-    {"input": "Lionel Messi won the Ballon d'Or 7 times.", "output": [("Messi", "Name"), ("Ballon d'Or", "Award")]}
+    {"input": "Lionel Messi won the Ballon d'Or 7 times.", "output": [("Lionel Messi", "Name"), ("Ballon d'Or", "Award")]}
 ]
 
 # Extract entities from the text using few-shot examples
