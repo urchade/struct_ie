@@ -12,6 +12,10 @@ pip install struct_ie
 
 ## Usage
 
+You can try it on google colab: <a href="https://colab.research.google.com/drive/1RjtZ8xWg6KU4ztHiRfSSrEr1UeZr6eZ2?usp=sharing">
+        <img align="center" src="https://colab.research.google.com/assets/colab-badge.svg" />
+</a>
+
 Here's an example of how to use the `EntityExtractor`:
 
 ### 1. Basic Usage
