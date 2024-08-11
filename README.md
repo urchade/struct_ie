@@ -10,6 +10,14 @@ You can install the `struct-ie` library from PyPI:
 pip install struct_ie
 ```
 
+## To-Do List
+
+- [ ] Add RelationExtractor
+- [ ] Add GraphExtractor
+- [ ] Add JsonExtractor
+- [ ] Implement batch prediction
+
+
 ## Usage
 
 You can try it on google colab: <a href="https://colab.research.google.com/drive/1RjtZ8xWg6KU4ztHiRfSSrEr1UeZr6eZ2?usp=sharing">
