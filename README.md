@@ -16,6 +16,7 @@ pip install struct_ie
 - [ ] Add GraphExtractor
 - [ ] Add JsonExtractor
 - [ ] Implement batch prediction
+- [ ] Implement a Trainer fot Instruction Tuning
 
 
 ## Usage
