@@ -12,11 +12,12 @@ pip install struct_ie
 
 ## To-Do List
 
+- [ ] Implement batch prediction
+- [ ] Implement a Trainer fot Instruction Tuning
+- [ ] PrefixLM for Instruction Tuning
 - [ ] Add RelationExtractor
 - [ ] Add GraphExtractor
 - [ ] Add JsonExtractor
-- [ ] Implement batch prediction
-- [ ] Implement a Trainer fot Instruction Tuning
 
 
 ## Usage
