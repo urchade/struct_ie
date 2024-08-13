@@ -12,7 +12,7 @@ pip install struct_ie
 
 ## To-Do List
 
-- [ ] Implement batch prediction
+- [x] Implement batch prediction
 - [ ] Implement a Trainer fot Instruction Tuning
 - [ ] PrefixLM for Instruction Tuning
 - [ ] Add RelationExtractor

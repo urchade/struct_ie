@@ -9,14 +9,14 @@ entity_types_with_descriptions = {
     "Other": "Any other named entities not covered by the other categories"
 }
 
-extractor = EntityExtractor("Qwen/Qwen2-0.5B-Instruct", entity_types_with_descriptions, device="cpu")
+extractor = EntityExtractor("Qwen/Qwen2-0.5B-Instruct", entity_types_with_descriptions, device="cuda")
 
 extractor.update_entity_types(entity_types_with_descriptions)
 
-text = (
-    "Cristiano Ronaldo won the Ballon d'Or. He was the top scorer in the UEFA Champions League in 2018. "
+text = [
+    "Cristiano Ronaldo won the Ballon d'Or. He was the top scorer in the UEFA Champions League in 2018.",
     "Lionel Messi who plays for Barcelona won the Golden Boot in 2019."
-)
+]
 
 entities = extractor.extract_entities(text)
 print(entities)

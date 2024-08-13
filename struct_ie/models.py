@@ -1,5 +1,5 @@
 from enum import Enum
-from typing import List, Optional, Dict
+from typing import List, Optional, Dict, Union
 
 import outlines
 from outlines.samplers import greedy
@@ -102,23 +102,29 @@ class EntityExtractor:
         )
         return adapted_text
 
-    def extract_entities(self, text: str, prompt: Optional[str] = None, few_shot_examples: Optional[List[dict]] = None):
+    def extract_entities(self, texts: Union[str, List[str]], prompt: Optional[str] = None,
+                         few_shot_examples: Optional[List[dict]] = None):
         """
-        Extracts entities from the given text.
+        Extracts entities from the given text or list of texts.
 
         Args:
-            text (str): The input text from which to extract entities.
+            texts (Union[str, List[str]]): The input text or list of texts from which to extract entities.
             prompt (Optional[str]): An optional prompt to guide the extraction process.
             few_shot_examples (Optional[List[dict]]): Optional few-shot examples to guide the model.
 
         Returns:
-            dict: The extracted entities in JSON format.
+            Union[dict, List[dict]]: The extracted entities in JSON format.
         """
         if self.entity_types_with_descriptions is None:
             raise ValueError("Entity types with descriptions must be provided before extracting entities.")
-        adapted_text = self.adapt_text(text, prompt, few_shot_examples)
-        output = self.generator(adapted_text)
-        return output
+
+        if isinstance(texts, str):
+            texts = [texts]
+
+        adapted_texts = [self.adapt_text(text, prompt, few_shot_examples) for text in texts]
+        outputs = [self.generator(adapted_text) for adapted_text in adapted_texts]
+
+        return outputs if len(outputs) > 1 else outputs[0]
 
     def update_entity_types(self, entity_types_with_descriptions: Dict[str, Optional[str]]):
         """
